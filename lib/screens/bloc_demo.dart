@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc_demo/bloc_providers/bloc_provider.dart';
 import 'package:flutter_bloc_demo/model/color_model.dart';
+import 'package:flutter_bloc_demo/screens/widgets/color_change_button.dart';
+import 'package:flutter_bloc_demo/screens/widgets/color_container.dart';
 
 class BlocDemo extends StatelessWidget {
   @override
@@ -16,7 +18,11 @@ class BlocDemo extends StatelessWidget {
           child: BlocProvider(
             bloc: ColorModel(),
             child: Column(
-              children: <Widget>[],
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ColorChangeButton(),
+                ColorContainer(),
+              ],
             ),
           ),
         ),

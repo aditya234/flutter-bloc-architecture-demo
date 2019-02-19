@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_demo/screens/bloc_demo.dart';
+import 'package:flutter_bloc_demo/screens/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BlocDemo(),
+      home: Home(),
     );
   }
 }
