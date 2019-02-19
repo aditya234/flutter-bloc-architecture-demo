@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_demo/bloc_providers/bloc_provider.dart';
+import 'package:flutter_bloc_demo/model/color_model.dart';
 
 class BlocDemo extends StatelessWidget {
   @override
@@ -11,16 +13,12 @@ class BlocDemo extends StatelessWidget {
       body: Container(
         child: Padding(
           padding: EdgeInsets.only(top: 100.0),
-          child: Container(),
-//          child: BlocProvider(
-//            bloc: ColorBloc(),
-//            child: Column(
-//              children: <Widget>[
-//                Child1(),
-//                Child2(),
-//              ],
-//            ),
-//          ),
+          child: BlocProvider(
+            bloc: ColorModel(),
+            child: Column(
+              children: <Widget>[],
+            ),
+          ),
         ),
       ),
     );
